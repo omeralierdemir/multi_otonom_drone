@@ -5,8 +5,8 @@ from sensor_msgs.msg import NavSatFix
 from mavros_msgs.srv import *
 
 #global variable
-latitude =0.0
-longitude=0.0
+latitude =47.3977422
+longitude=8.5455939
 
 
 def setGuidedMode():
@@ -57,7 +57,7 @@ def setTakeoffMode():
     rospy.wait_for_service('/mavros/cmd/takeoff')
     try:
         takeoffService = rospy.ServiceProxy('/mavros/cmd/takeoff', mavros_msgs.srv.CommandTOL) 
-        takeoffService(altitude = 2, latitude = 0, longitude = 0, min_pitch = 0, yaw = 0)
+        takeoffService(altitude = 2, latitude = 47.3977422, longitude = 8.5455939, min_pitch = 0, yaw = 0)
     except rospy.ServiceException, e:
         print "Service takeoff call failed: %s"%e
     
