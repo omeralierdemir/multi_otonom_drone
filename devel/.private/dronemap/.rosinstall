@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/efl4tun/catkin_ws/devel/.private/dronemap/setup.sh

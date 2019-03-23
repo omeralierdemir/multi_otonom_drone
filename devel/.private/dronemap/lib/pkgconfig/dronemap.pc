@@ -1,0 +1,8 @@
+prefix=/home/efl4tun/catkin_ws/devel/.private/dronemap
+
+Name: dronemap
+Description: Description of dronemap
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/efl4tun/catkin_ws/devel/.private/dronemap/lib 
+Requires: 
